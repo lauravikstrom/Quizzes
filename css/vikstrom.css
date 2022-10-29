@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+body,
+.headerclass,
+section {
+    background-color: #f2f2f2;
+}
+
+.headerclass {
+    margin-left: 3.5em;
+}
+
+section {
+    margin-left: 7em;
+}
+
+h1 {
+    background-color: #f2f2f2;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: 'Cinzel Decorative', cursive;
+    text-shadow: 0px 4px 4px #234D3C;
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    margin-left: 2em;
+}
+
+nav {
+    max-width: 100%;
+    box-shadow: #d6d6d6 7px 7px 7px 0px;
+}
+
+.navbar {
+    background: linear-gradient(237deg, #e6e6e6, #d9d9d9);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 17s ease infinite;
+    -moz-animation: AnimationName 17s ease infinite;
+    animation: AnimationName 17s ease infinite;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+
+.yhteystiedot-nav-item {
+    margin-left: 10.5em;
+    margin-right: 1.5em;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+    animation-name: navhover_animaatio;
+    animation-duration: 7s;
+    animation-delay: 1s;
+}
+
+@keyframes navhover_animaatio {
+    from {background-color: #e6e6e6; color: #cccccc; border-radius: 15px}
+    to {background-color: #bfbfbf; color: black; border-radius: 7px;}
+}
+
+.hover-efekti {
+    display: none !important;
+}
+
+.nav_dropdown {
+    background-color: #e6e6e6;
+}
+
+img {
+    max-width: 100%;
+}
+
+.yhteystiedot_animaatio1 {
+    text-shadow: 0px 10px 10px #0e76a8;
+    font-family: 'Cinzel Decorative', cursive;
+    text-decoration: none;
+    color: black;
+}
+
+.yhteystiedot_animaatio1:hover {
+    animation-name: yhteystiedot_animaatio1;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    color: black;
+}
+
+@keyframes yhteystiedot_animaatio1 {
+    0% {text-shadow: 0px 10px 10px #0e76a8;}
+    25% {text-shadow: 0px 40px 10px #0e76a8;}
+    50% {text-shadow: 0px 30px 10px #0e76a8;}
+    70% {text-shadow: 0px 40px 10px #0e76a8;}
+    100% {text-shadow: 0px 10px 10px #0e76a8;}
+}
+
+.yhteystiedot_animaatio2 {
+    text-shadow: 0px 10px 10px #972a1c;
+    font-family: 'Cinzel Decorative', cursive;
+    text-decoration: none;
+    color: black;
+}
+
+.yhteystiedot_animaatio2:hover {
+    animation-name: yhteystiedot_animaatio2;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    color: black;
+}
+
+@keyframes yhteystiedot_animaatio2 {
+    0% {text-shadow: 0px 10px 10px #972a1c;}
+    25% {text-shadow: 0px 40px 10px #972a1c;}
+    50% {text-shadow: 0px 30px 10px #972a1c;}
+    70% {text-shadow: 0px 40px 10px #972a1c;}
+    100% {text-shadow: 0px 10px 10px #972a1c;}
+}

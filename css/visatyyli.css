@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Snowburst+One&display=swap" rel="stylesheet"');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+
+body {
+    background-color: #f2f2f2;
+}
+
+.headerclass {
+    background-color: #f2f2f2;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+header {
+    background-color: #f2f2f2;
+}   
+
+section {
+    background-color: #f2f2f2;
+    padding-bottom: 8em;
+}
+
+h1 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.navbar {
+    background-color: #e6e6e6 !important;
+}
+
+.nav-link:hover {
+    background-color: #cccccc;
+    border-radius: 3px;
+}
+
+.hover-efekti {
+    display: none !important;
+}
+
+.yhteystiedot-nav-item {
+    margin-left: 10.5em;
+    margin-right: 1.5em;
+}
+
+.fontti1 {
+    font-family: 'Original Surfer', cursive;
+}
+
+.visalista1 {
+    font-family: 'Original Surfer', cursive;
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 767px)
+{
+    img {
+        max-width: 170px;
+    }
+
+    .etusivu1 {
+        display: flex;
+    }
+
+}
