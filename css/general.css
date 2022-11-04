@@ -1,9 +1,5 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-
 
 body,
 .headerclass,
@@ -12,7 +8,10 @@ section {
 }
 
 .headerclass {
-    margin-left: 3.5em;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
 }
 
 section {
@@ -67,25 +66,21 @@ nav {
     100%{background-position:96% 0%}
 }
 
-.yhteystiedot-nav-item {
+.contact-nav-item {
     margin-left: 10.5em;
     margin-right: 1.5em;
-}
+} 
 
 .nav-link:hover,
 .dropdown-item:hover {
-    animation-name: navhover_animaatio;
+    animation-name: navhover_animation;
     animation-duration: 7s;
     animation-delay: 1s;
 }
 
-@keyframes navhover_animaatio {
+@keyframes navhover_animation {
     from {background-color: #e6e6e6; color: #cccccc; border-radius: 15px}
     to {background-color: #bfbfbf; color: black; border-radius: 7px;}
-}
-
-.hover-efekti {
-    display: none !important;
 }
 
 .nav_dropdown {
@@ -96,21 +91,21 @@ img {
     max-width: 100%;
 }
 
-.yhteystiedot_animaatio1 {
+.contact_animation1 {
     text-shadow: 0px 10px 10px #0e76a8;
     font-family: 'Cinzel Decorative', cursive;
     text-decoration: none;
     color: black;
 }
 
-.yhteystiedot_animaatio1:hover {
-    animation-name: yhteystiedot_animaatio1;
+.contact_animation1:hover {
+    animation-name: contact_animation1;
     animation-duration: 5s;
     animation-iteration-count: 1;
     color: black;
 }
 
-@keyframes yhteystiedot_animaatio1 {
+@keyframes contact_animation1 {
     0% {text-shadow: 0px 10px 10px #0e76a8;}
     25% {text-shadow: 0px 40px 10px #0e76a8;}
     50% {text-shadow: 0px 30px 10px #0e76a8;}
@@ -118,24 +113,51 @@ img {
     100% {text-shadow: 0px 10px 10px #0e76a8;}
 }
 
-.yhteystiedot_animaatio2 {
+.contact_animation2 {
     text-shadow: 0px 10px 10px #972a1c;
     font-family: 'Cinzel Decorative', cursive;
     text-decoration: none;
     color: black;
 }
 
-.yhteystiedot_animaatio2:hover {
-    animation-name: yhteystiedot_animaatio2;
+.contact_animation2:hover {
+    animation-name: contact_animation2;
     animation-duration: 5s;
     animation-iteration-count: 1;
     color: black;
 }
 
-@keyframes yhteystiedot_animaatio2 {
+@keyframes contact_animation2 {
     0% {text-shadow: 0px 10px 10px #972a1c;}
     25% {text-shadow: 0px 40px 10px #972a1c;}
     50% {text-shadow: 0px 30px 10px #972a1c;}
     70% {text-shadow: 0px 40px 10px #972a1c;}
     100% {text-shadow: 0px 10px 10px #972a1c;}
+}
+
+@media only screen and (max-width: 767px)
+{
+    section {
+        margin-left: 0em;
+    }
+
+    img {
+        max-width: 30%;     
+    }
+
+    .contact-nav-item {
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        margin-left: 2em;
+        text-align: center;
+    }
+
+    address {
+        font-size: small;
+    }
+
 }

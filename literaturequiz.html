@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/visatyyli.css">
-    <link rel="stylesheet" href="css/kirjallisuusvisa.css">
+    <link rel="stylesheet" href="css/quizstyle.css">
+    <link rel="stylesheet" href="css/literaturequiz.css">
     <title>Web-projekti</title>
 </head>
 
@@ -30,8 +30,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav">
-                    <li class="nav-item yhteystiedot-nav-item">
-                        <a class="nav-link" href="yhteystiedot.html"><i class="fas fa-angle-double-right hover-efekti text-secondary" id="yhteystiedot-nav-item"></i> Yhteystiedot</a>
+                    <li class="nav-item contact-nav-item">
+                        <a class="nav-link" href="contact.html"><i class="fas fa-angle-double-right hover-effect text-secondary" id="contact-nav-item"></i>Yhteystiedot</a>
                       </li>   
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle active" aria-current="page" href="#" id="navbarDropdownMenuLink" 
@@ -39,8 +39,8 @@
                         Visat
                       </a>
                       <ul class="dropdown-menu nav_dropdown" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="kirjallisuusvisa.html">Kirjallisuusvisa</a></li>
-                        <li><a class="dropdown-item" href="luontovisa.html">Luontovisa</a></li>
+                        <li><a class="dropdown-item" href="literaturequiz.html">Kirjallisuusvisa</a></li>
+                        <li><a class="dropdown-item" href="naturequiz.html">Luontovisa</a></li>
                       </ul>
                     </li>                   
                   </ul>
@@ -52,19 +52,19 @@
         <section class="row text-center ms-5 me-5">
             <div class="col-12" id="general">
                 <h2 class="mt-5">Kirjallisuusvisa</h2>
-                <p class="pelementti pb-3">Kirjallisuusvisassa on viisi kirjallisuuteen liittyvää kysymystä. Jokaiseen
+                <p class="element_width pb-3">Kirjallisuusvisassa on viisi kirjallisuuteen liittyvää kysymystä. Jokaiseen
                     kysymykseen on vain yksi oikea vastaus. Kysymysten alla näet vastausvaihtoehdot ja voit kirjoittaa
                     oikean vaihtoehdon niiden alla näkyvään laatikkoon.</p>
 
-                <p class="pelementti pb-3"><span class="fw-bolder painike">Mieti tarkkaan ennen kuin vastaat.</span>
+                <p class="element_width pb-3"><span class="fw-bolder button">Mieti tarkkaan ennen kuin vastaat.</span>
                     Oikeinkirjoitus on osa
                     kirjallisuutta ja sen vuoksi myös vastauksia kirjoittaessa on hyvä olla tarkkana! Muista eritoten
                     isot sekä pienet kirjaimet, pisteet ja välilyönnit.</p>
 
-                <p class="pelementti pb-2">Kysymyksiin vastataan yksi kerrallaan. Kun olet vastannut ensimmäiseen
+                <p class="element_width pb-2">Kysymyksiin vastataan yksi kerrallaan. Kun olet vastannut ensimmäiseen
                     kysymykseen, näet onko tuloksesi oikein vai väärin ja pystyt jatkamaan kohtia seuraavaa
                     sulkakynäseikkailua!</p>
-                <p class="fontti2">Menestystä visaan!</p>
+                <p class="font2">Menestystä visaan!</p>
             </div>
 
             <form>
@@ -77,14 +77,14 @@
                         <li class="list-group-item">Stephen King</li>
                         <li class="list-group-item mb-2">Scott Lynch </li>
                     </ul>
-                    <div class="col-9 inputkentta border-top border-dark pt-3">
-                        <label for="vastaus1" class="form-label painike fs-5">Vastauksesi:</label>
+                    <div class="col-9 input_field border-top border-dark pt-3">
+                        <label for="1_answer" class="form-label button fs-5">Vastauksesi:</label>
                         <i aria-hidden="true"></i>
-                        <input type="text" class="form-control text-center" id="vastaus1"
+                        <input type="text" class="form-control text-center" id="1_answer"
                             placeholder="Kirjoita vastauksesi tähän.">
                     </div>
                     <div>
-                        <button type="button" class="btn btn-dark text-light mb-4 mt-3 painike" id="vastaus1_painike">
+                        <button type="button" class="btn btn-dark text-light mb-4 mt-3 button" id="1_answerbutton">
                             <i aria-hidden="true"></i>
                             Vastaa</button>
                     </div>
@@ -92,17 +92,17 @@
                     <div class="row">
                         <p class="col-12 text-center" id="tolkien_answer">Vastauksesi on <span
                                 id="tolkien_answer2">...</span></p>
-                        <p class="hided col-12 fontti2 pelementti" id="tolkien1">"Varsinaisen läpimurtonsa Tolkien teki
+                        <p class="hided col-12 font2 element_width" id="tolkien_info1">"Varsinaisen läpimurtonsa Tolkien teki
                             60-luvulla, jolloin
                             hänen Hobitin jatkoksi kirjoittamansa tuhatsivuinen fantasiajärkäle Taru Sormusten herrasta
                             (1954­–55)
                             herätti vastakaikua amerikkalaisilla yliopistokampuksilla."</p>
-                        <address class="hided col-12" id="tolkien2">Lähde: <a
+                        <address class="hided col-12" id="tolkien_info2">Lähde: <a
                                 href="https://www.wsoy.fi/kirjailija/j.-r.-r.-tolkien" target="_blank">WSOY: J. R. R.
                                 Tolkien</a></address>
                     </div>
                     <div>
-                        <button type="button" class="btn btn-dark text-light mb-4 painike hided" id="ok1_painike">
+                        <button type="button" class="btn btn-dark text-light mb-4 button hided" id="1_ok_button">
                             <i aria-hidden="true"></i>
                             Näytä seuraava kysymys</button>
                     </div>
@@ -117,32 +117,32 @@
                         <li class="list-group-item">Arthur Conan Doyle</li>
                         <li class="list-group-item mb-2">Danielle Steel</li>
                     </ul>
-                    <div class="col-9 inputkentta border-top border-dark pt-3">
-                        <label for="vastaus2" class="form-label painike fs-5">Vastauksesi:</label>
+                    <div class="col-9 input_field border-top border-dark pt-3">
+                        <label for="2_answer" class="form-label button fs-5">Vastauksesi:</label>
                         <i aria-hidden="true"></i>
-                        <input type="text" class="form-control text-center" id="vastaus2"
+                        <input type="text" class="form-control text-center" id="2_answer"
                             placeholder="Kirjoita vastauksesi tähän.">
                     </div>
                     <div>
-                        <button type="button" class="btn btn-dark text-light mb-4 mt-3 painike" id="vastaus2_painike">
+                        <button type="button" class="btn btn-dark text-light mb-4 mt-3 button" id="2_answerbutton">
                             <i aria-hidden="true"></i>
                             Vastaa</button>
                     </div>
 
                     <div class="row">
                         <p class="col-12" id="doyle_answer">Vastauksesi on <span id="doyle_answer2">...</span></p>
-                        <p class="hided col-12 fontti2 pelementti" id="doyle1">"Sir Arthur Conan Doyle (1859–1930) oli
+                        <p class="hided col-12 font2 element_width" id="doyle_info1">"Sir Arthur Conan Doyle (1859–1930) oli
                             skotlantilainen kirjailija.
                             Hänen tunnetuin luomuksensa on maailman kuuluisin salapoliisi Sherlock Holmes. Holmesin
                             seikkailujen lisäksi Doyle
                             kirjoitti tieteiskirjallisuutta, historiallisia romaaneja, näytelmiä ja
                             tietokirjallisuutta."</p>
-                        <address class="hided col-12" id="doyle2">Lähde: <a
+                        <address class="hided col-12" id="doyle_info2">Lähde: <a
                                 href="http://www.teos.fi/kirjailijat/sir-arthur-conan-doyle.html" target="_blank">Teos:
                                 SIR ARTHUR CONAN DOYLE</a></address>
                     </div>
                     <div>
-                        <button type="button" class="btn btn-dark text-light mb-4 painike hided" id="ok2_painike">
+                        <button type="button" class="btn btn-dark text-light mb-4 button hided" id="2_ok_button">
                             <i aria-hidden="true"></i>
                             Näytä seuraava kysymys</button>
                     </div>
@@ -157,31 +157,31 @@
                         <li class="list-group-item">Sujata Massey</li>
                         <li class="list-group-item mb-2"> Cecilia Ahern</li>
                     </ul>
-                    <div class="col-9 inputkentta border-top border-dark pt-3">
-                        <label for="vastaus3" class="form-label painike fs-5">Vastauksesi:</label>
+                    <div class="col-9 input_field border-top border-dark pt-3">
+                        <label for="3_answer" class="form-label button fs-5">Vastauksesi:</label>
                         <i aria-hidden="true"></i>
-                        <input type="text" class="form-control text-center" id="vastaus3"
+                        <input type="text" class="form-control text-center" id="3_answer"
                             placeholder="Kirjoita vastauksesi tähän.">
                     </div>
                     <div>
-                        <button type="button" class="btn btn-dark text-light mb-4 mt-3 painike" id="vastaus3_painike">
+                        <button type="button" class="btn btn-dark text-light mb-4 mt-3 button" id="3_answerbutton">
                             <i aria-hidden="true"></i>
                             Vastaa</button>
                     </div>
 
                     <div class="row">
                         <p class="col-12" id="rowling_answer">Vastauksesi on <span id="rowling_answer2">...</span></p>
-                        <p class="hided col-12 fontti2 pelementti" id="rowling1">"Koko maailma tuntee brittiläisen J.K.
+                        <p class="hided col-12 font2 element_width" id="rowling_info1">"Koko maailma tuntee brittiläisen J.K.
                             Rowlingin Harry Potter
                             -kirjasarjan rakastettuna tekijänä. Seitsenosainen sarja on maailman myydyin, se on
                             käännetty 73 kielelle ja
                             valloittanut valkokankaat kahdeksana menestyselokuvana."</p>
-                        <address class="hided col-12" id="rowling2">Lähde: <a
+                        <address class="hided col-12" id="rowling_info2">Lähde: <a
                                 href="https://otava.fi/kirjailijat/j-k-rowling/" target="_blank">Otava: J.K. Rowling</a>
                         </address>
                     </div>
                     <div>
-                        <button type="button" class="btn btn-dark text-light mb-4 painike hided" id="ok3_painike">
+                        <button type="button" class="btn btn-dark text-light mb-4 button hided" id="3_ok_button">
                             <i aria-hidden="true"></i>
                             Näytä seuraava kysymys</button>
                     </div>
@@ -196,32 +196,32 @@
                         <li class="list-group-item">Nora Roberts</li>
                         <li class="list-group-item mb-2">George R. R. Martin</li>
                     </ul>
-                    <div class="col-9 inputkentta border-top border-dark pt-3">
-                        <label for="vastaus4" class="form-label painike fs-5">Vastauksesi:</label>
+                    <div class="col-9 input_field border-top border-dark pt-3">
+                        <label for="4_answer" class="form-label button fs-5">Vastauksesi:</label>
                         <i aria-hidden="true"></i>
-                        <input type="text" class="form-control text-center" id="vastaus4"
+                        <input type="text" class="form-control text-center" id="4_answer"
                             placeholder="Kirjoita vastauksesi tähän.">
                     </div>
                     <div>
-                        <button type="button" class="btn btn-dark text-light mb-4 mt-3 painike" id="vastaus4_painike">
+                        <button type="button" class="btn btn-dark text-light mb-4 mt-3 button" id="4_answerbutton">
                             <i aria-hidden="true"></i>
                             Vastaa</button>
                     </div>
 
                     <div class="row">
                         <p class="col-12" id="martin_answer">Vastauksesi on <span id="martin_answer2">...</span></p>
-                        <p class="hided col-12 fontti2 pelementti" id="martin1">"Tulen ja jään laulu on yhdysvaltalaisen
+                        <p class="hided col-12 font2 element_width" id="martin_info1">"Tulen ja jään laulu on yhdysvaltalaisen
                             George R. R. Martinin kirjoittama
                             fantasiakirjasarja, joka on saavuttanut suuren suosion ympäri maailman. Kirjoja on myyty yli
                             90 miljoonaa kappaletta, ja
                             Tulen ja jään laulusta on tullut nykypäivän kaupallisesti menestynein eeppinen
                             fantasiasarja."</p>
-                        <address class="hided col-12" id="martin2">Lähde: <a
+                        <address class="hided col-12" id="martin_info2">Lähde: <a
                                 href="https://www.risingshadow.fi/library/series/83-tulen-ja-jaan-laulu"
                                 target="_blank">Risingshadow: Tulen ja jään laulu</a></address>
                     </div>
                     <div>
-                        <button type="button" class="btn btn-dark text-light mb-4 painike hided" id="ok4_painike">
+                        <button type="button" class="btn btn-dark text-light mb-4 button hided" id="4_ok_button">
                             <i aria-hidden="true"></i>
                             Näytä seuraava kysymys</button>
                     </div>
@@ -236,31 +236,31 @@
                         <li class="list-group-item">C. S. Lewis</li>
                         <li class="list-group-item mb-2">Oscar Wilde</li>
                     </ul>
-                    <div class="col-9 inputkentta border-top border-dark pt-3">
-                        <label for="vastaus5" class="form-label painike fs-5">Vastauksesi:</label>
+                    <div class="col-9 input_field border-top border-dark pt-3">
+                        <label for="5_answer" class="form-label button fs-5">Vastauksesi:</label>
                         <i aria-hidden="true"></i>
-                        <input type="text" class="form-control text-center" id="vastaus5"
+                        <input type="text" class="form-control text-center" id="5_answer"
                             placeholder="Kirjoita vastauksesi tähän.">
                     </div>
                     <div>
-                        <button type="button" class="btn btn-dark text-light mb-4 mt-3 painike" id="vastaus5_painike">
+                        <button type="button" class="btn btn-dark text-light mb-4 mt-3 button" id="5_answerbutton">
                             <i aria-hidden="true"></i>
                             Vastaa</button>
                     </div>
 
                     <div class="row">
                         <p class="col-12" id="lewis_answer">Vastauksesi on <span id="lewis_answer2">...</span></p>
-                        <p class="hided col-12 fontti2 pelementti" id="lewis1">"Brittiläinen kirjailija ja
+                        <p class="hided col-12 font2 element_width" id="lewis_info1">"Brittiläinen kirjailija ja
                             kirjallisuudentutkija Clive Staples Lewis
                             (s.1898 Belfast – k.1963 Oxford) julkaisi nelisenkymmentä teosta, uskonnollista ja
                             tieteiskirjallisuutta aikuisille
                             sekä seitsenosaisen lastenkirjallisuuden klassikon Narnia-sarjan (1950-56)."</p>
-                        <address class="hided col-12" id="lewis2">Lähde: <a
+                        <address class="hided col-12" id="lewis_info2">Lähde: <a
                                 href="https://otava.fi/kirjailijat/c-s-lewis/" target="_blank">Otava: C. S. Lewis</a>
                         </address>
                     </div>
                     <div>
-                        <button type="button" class="btn btn-dark text-light mb-4 painike hided" id="ok5_painike">
+                        <button type="button" class="btn btn-dark text-light mb-4 button hided" id="5_ok_button">
                             <i aria-hidden="true"></i>
                             Näytä tulokset</button>
                     </div>
@@ -268,21 +268,21 @@
 
                 <div class="row">
                     <div class="mt-2">
-                        <span class="hided col-sm-2" id="vastauksienmaara"></span>
-                        <img class="books hided" src="img/lv_book.png" alt="">
+                        <span class="hided col-sm-2" id="amount_answers"></span>
+                        <img class="books hided" src="img/book.png" alt="">
                     </div>
                     <div class="row mt-4">
-                        <p class="pelementti"><span class="hided vastaukset" id="vastaukset"></span></p>
+                        <p class="element_width"><span class="hided answers" id="answers"></span></p>
                     </div>
-                    <div class="hided mb-3 col-12" id="oikeatvaarat">
+                    <div class="hided mb-3 col-12" id="wrong_answers">
                         <h3 class="mt-3">Vastasit väärin seuraaviin kysymyksiin:</h3>
-                        <p class="mt-2"><span id="vaarat"></span></p>
+                        <p class="mt-2"><span id="wrong"></span></p>
                     </div>
 
-                    <div class="row hided pelementti border-top border-secondary" id="tolkientulos">
+                    <div class="row hided element_width border-top border-secondary" id="tolkien_result">
                         <h5 class="mt-3">1. Kuka on kirjoittanut kirjan Taru Sormusten Herrasta?</h5>
                         <p>Oikea vastaus on J. R. R. Tolkien.</p>
-                        <p class="fontti2">"Varsinaisen läpimurtonsa Tolkien teki 60-luvulla, jolloin
+                        <p class="font2">"Varsinaisen läpimurtonsa Tolkien teki 60-luvulla, jolloin
                             hänen Hobitin jatkoksi kirjoittamansa tuhatsivuinen fantasiajärkäle Taru Sormusten herrasta
                             (1954­–55)
                             herätti vastakaikua amerikkalaisilla yliopistokampuksilla."</p>
@@ -290,10 +290,10 @@
                                 J. R. R. Tolkien</a></address>
                     </div>
 
-                    <div class="row hided border-top border-secondary pelementti" id="doyletulos">
+                    <div class="row hided border-top border-secondary element_width" id="doyle_result">
                         <h5 class="mt-3">2. Kuka on kirjoittanut Sherlock Holmes -kirjat?</h5>
                         <p>Oikea vastaus on Arthur Conan Doyle.</p>
-                        <p class="fontti2">"Sir Arthur Conan Doyle (1859–1930) oli skotlantilainen kirjailija.
+                        <p class="font2">"Sir Arthur Conan Doyle (1859–1930) oli skotlantilainen kirjailija.
                             Hänen tunnetuin luomuksensa on maailman kuuluisin salapoliisi Sherlock Holmes. Holmesin
                             seikkailujen lisäksi Doyle
                             kirjoitti tieteiskirjallisuutta, historiallisia romaaneja, näytelmiä ja
@@ -302,10 +302,10 @@
                                 target="_blank">Teos: SIR ARTHUR CONAN DOYLE</a></address>
                     </div>
 
-                    <div class="row hided border-top border-secondary pelementti" id="rowlingtulos">
+                    <div class="row hided border-top border-secondary element_width" id="rowling_result">
                         <h5 class="mt-3">3. Kuka on kirjoittanut Harry Potter -kirjasarjan?</h5>
                         <p>Oikea vastaus on J. K. Rowling.</p>
-                        <p class="fontti2">"Koko maailma tuntee brittiläisen J.K. Rowlingin Harry Potter
+                        <p class="font2">"Koko maailma tuntee brittiläisen J.K. Rowlingin Harry Potter
                             -kirjasarjan rakastettuna tekijänä. Seitsenosainen sarja on maailman myydyin, se on
                             käännetty 73 kielelle ja
                             valloittanut valkokankaat kahdeksana menestyselokuvana."</p>
@@ -313,10 +313,10 @@
                                 Rowling</a></address>
                     </div>
 
-                    <div class="row hided border-top border-secondary pelementti" id="martintulos">
+                    <div class="row hided border-top border-secondary element_width" id="martin_result">
                         <h5 class="mt-3">4. Kuka on kirjoittanut Tulen ja jään laulu -kirjasarjan?</h5>
                         <p>Oikea vastaus on George. R. R. Martin.</p>
-                        <p class="fontti2" id="martin1">"Tulen ja jään laulu on yhdysvaltalaisen George R. R. Martinin
+                        <p class="font2">"Tulen ja jään laulu on yhdysvaltalaisen George R. R. Martinin
                             kirjoittama
                             fantasiakirjasarja, joka on saavuttanut suuren suosion ympäri maailman. Kirjoja on myyty yli
                             90 miljoonaa kappaletta, ja
@@ -326,10 +326,10 @@
                                 target="_blank">Risingshadow: Tulen ja jään laulu</a></address>
                     </div>
 
-                    <div class="row hided border-top border-secondary pelementti" id="lewistulos">
+                    <div class="row hided border-top border-secondary element_width" id="lewis_result">
                         <h5 class="mt-3">5. Kuka on kirjoittanut Narnian Tarinat -kirjasarjan?</h5>
                         <p>Oikea vastaus on C. S. Lewis.</p>
-                        <p class="fontti2" id="lewis1">"Brittiläinen kirjailija ja kirjallisuudentutkija Clive Staples
+                        <p class="font2">"Brittiläinen kirjailija ja kirjallisuudentutkija Clive Staples
                             Lewis
                             (s.1898 Belfast – k.1963 Oxford) julkaisi nelisenkymmentä teosta, uskonnollista ja
                             tieteiskirjallisuutta aikuisille
@@ -341,7 +341,7 @@
                         <p>Kuvat: Pixabay</p>
                     </div>
 
-                    <div class="hided yritauudelleen mt-4"><a href="kirjallisuusvisa.html">
+                    <div class="hided try_again mt-4"><a href="literaturequiz.html">
                         <button type="button" class="btn btn-secondary">Yritä uudelleen</button></a></div>
                 </div>
             </form>
@@ -357,7 +357,7 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/vikstrom.js"></script>
-    <script src="js/kirjallisuusvisa.js"></script>
+    <script src="js/literaturequiz.js"></script>
     <script src="https://kit.fontawesome.com/aad4a89e11.js" crossorigin="anonymous"></script>
 </body>
 

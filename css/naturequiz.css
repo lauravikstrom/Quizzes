@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-/* Otsikkomuotoilu */
+/* Heading */
 h2,
 h3 {
   margin-top: 1.5em;
@@ -10,33 +10,33 @@ h3 {
   font-family: 'Permanent Marker', cursive;
 }
 
-/* Visaa edeltävän tekstin muotoilu */
-.pelementti {
+/* Text before quiz */
+.element_width {
   max-width: 60ch;
   margin: 0 auto !important;
 }
 
-/* Lehti-kuvakkeen muotoilu */
+/* Leaf icon */
 .fa-leaf {
   color: #e68a00;
 }
 
-/* Form-elementin muotoilu */
+/* Form element*/
 form {
   padding-left: 2.5em;
 }
 
-/* Buttonin muotoilu */
+/* Button */
 .btn {
   margin-left: 10em;
 }
 
-/* Piilotettujen elementtien muotoilu */
+/* Hidden elements */
 .hided {
   display: none;
 }
 
-/* Väärin valitun radiobuttonin tekstin muotoilu */
+/* Radio button text when answer is wrong */
 .selected {
   background-color: #ff0000;
   border-radius: 5px;
@@ -44,7 +44,7 @@ form {
   padding-right: 7px;
 }
 
-/* Oikein valitun radiobuttonin tekstin muotoilu */
+/* Radio button text when answer is right */
 .selected_c {
   background-color: #008000;
   border-radius: 5px;
@@ -52,7 +52,7 @@ form {
   padding-right: 7px;
 }
 
-/* Kuvien muotoilu */
+/* Images */
 img {
   max-width: 100%;
   border-radius: 10px;

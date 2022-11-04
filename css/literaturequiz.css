@@ -6,16 +6,16 @@
 h2,
 h3,
 h5,
-.painike {
+.button {
   font-family: 'Goudy Bookletter 1911', serif;
 }
 
-.pelementti {
+.element_width {
   max-width: 60ch;
   margin: 0 auto !important;
 }
 
-.fontti2 {
+.font2 {
   font-family: 'Tangerine', cursive;
   font-size: 2.2em;
 }
@@ -29,14 +29,14 @@ h5,
   display: none;
 }
 
-.inputkentta {
+.input_field {
   max-width: 35ch;
   margin: 0 auto !important;
 }
 
 @media only screen and (max-width: 700px) {
   
-  .inputkentta {
+  .input_field {
     max-width: 25ch;
   }
 }
@@ -45,7 +45,7 @@ img {
   max-width: 100%;
 }
 
-.vastaukset {
+.answers {
   font-family: 'Goudy Bookletter 1911', serif;
   font-size: 18px;
 }

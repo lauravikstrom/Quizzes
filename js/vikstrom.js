@@ -3,12 +3,12 @@
 $(function () {
 
   
-  $(".yhteystiedot-nav-item").mouseenter(function(){
-    $('#yhteystiedot-nav-item').removeClass('hover-efekti')
+  $(".contact-nav-item").mouseenter(function(){
+    $('#contact-nav-item').removeClass('hover-effect')
   });
 
-  $(".yhteystiedot-nav-item").mouseleave(function(){
-    $('#yhteystiedot-nav-item').addClass('hover-efekti')
+  $(".contact-nav-item").mouseleave(function(){
+    $('#contact-nav-item').addClass('hover-effect')
   });
 
 

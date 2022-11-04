@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/visatyyli.css">
-  <link rel="stylesheet" href="css/luontovisa.css">
+  <link rel="stylesheet" href="css/quizstyle.css">
+  <link rel="stylesheet" href="css/naturequiz.css">
   <title>Web-projekti</title>
 </head>
 
@@ -30,8 +30,8 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-item yhteystiedot-nav-item">
-                <a class="nav-link" href="yhteystiedot.html"><i class="fas fa-angle-double-right hover-efekti text-secondary" id="yhteystiedot-nav-item"></i> Yhteystiedot</a>
+              <li class="nav-item contact-nav-item">
+                <a class="nav-link" href="contact.html"><i class="fas fa-angle-double-right hover-effect text-secondary" id="contact-nav-item"></i>Yhteystiedot</a>
               </li> 
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle active" aria-current="page" href="#" id="navbarDropdownMenuLink" 
@@ -39,8 +39,8 @@
                   Visat
                 </a>
                 <ul class="dropdown-menu nav_dropdown" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="kirjallisuusvisa.html">Kirjallisuusvisa</a></li>
-                  <li><a class="dropdown-item" href="luontovisa.html">Luontovisa</a></li>
+                  <li><a class="dropdown-item" href="literaturequiz.html">Kirjallisuusvisa</a></li>
+                  <li><a class="dropdown-item" href="naturequiz.html">Luontovisa</a></li>
                 </ul>
               </li>                     
             </ul>
@@ -50,7 +50,7 @@
     </header>
 
     <section class="row">
-      <div class="col-12 text-center pelementti">
+      <div class="col-12 text-center element_width">
         <h2><i class="fa fa-leaf" aria-hidden="true"></i>
           Luontovisa <i class="fa fa-leaf" aria-hidden="true"></i>
         </h2>
@@ -68,26 +68,26 @@
           <form>
             <h3>1. Mikä eläimistä on nopein?</h3>
             <div class="form-check">
-              <input type="radio" name="luonto1" class="luonto1" id="kettu1" value="2">
-              <label for="kettu1" class="ms-2">
+              <input type="radio" name="nature" class="nature" id="1_fox" value="2">
+              <label for="1_fox" class="ms-2">
                 Kettu
               </label>
             </div>
             <div class="form-check">
-              <input type="radio" name="luonto1" class="luonto1" id="ruskeakarhu1" value="1">
-              <label for="ruskeakarhu1" class="ms-2">
+              <input type="radio" name="nature" class="nature" id="1_brownbear" value="1">
+              <label for="1_brownbear" class="ms-2">
                 Ruskeakarhu
               </label>
             </div>
             <div class="form-check">
-              <input type="radio" name="luonto1" class="luonto1" id="kilpikonna1" value="3">
-              <label for="kilpikonna1" class="ms-2">
+              <input type="radio" name="nature" class="nature" id="1_turtle" value="3">
+              <label for="1_turtle" class="ms-2">
                 Kilpikonna
               </label>
             </div>
             <div class="form-check">
-              <input type="radio" name="luonto1" class="luonto1" id="orava1" value="4">
-              <label for="orava1" class="ms-2">
+              <input type="radio" name="nature" class="nature" id="1_squirrel" value="4">
+              <label for="1_squirrel" class="ms-2">
                 Orava
               </label>
             </div>
@@ -95,15 +95,15 @@
         </div>
 
         <div class="col-sm-12 col-md-3 col-lg-3">
-          <p class="hided mt-5" id="brownbear1">
+          <p class="hided mt-5" id="brownbear_info1">
             <img src="img/bear1.jpg" alt="">
           </p>
         </div>
         <div class="col-sm-12 col-md-3 col-lg-3">
           <h4 class="hided mt-5" id="right1">Oikein!</h4>
           <h4 class="hided mt-5" id="wrong1">Väärin. Oikea vastaus on ruskeakarhu.</h4>
-          <p class="hided" id="brownbear2">"Karhu on tarvittaessa nopea etenijä: nopeus voi kiihtyä jopa 60 km/h."</p>
-          <address class="hided" id="brownbear3">Lähde: <a href="https://petohanke.fi/pdf/Petoluonto-opas_FIN.pdf"
+          <p class="hided" id="brownbear_info2">"Karhu on tarvittaessa nopea etenijä: nopeus voi kiihtyä jopa 60 km/h."</p>
+          <address class="hided" id="brownbear_info3">Lähde: <a href="https://petohanke.fi/pdf/Petoluonto-opas_FIN.pdf"
               target="_blank">PetoLuonto-opas: Karhu: Karhun elintavat ja ravinto</a></address>
         </div>
       </div>
@@ -113,32 +113,32 @@
           <form>
             <h3>2. Mikä seuraavista ei ole Suomessa kasvava puulaji?</h3>
             <div class="form-check">
-              <input type="radio" name="puu1" class="puu1" id="koivu1" value="2">
-              <label for="koivu1" class="ms-2">
+              <input type="radio" name="tree" class="tree" id="2_birch" value="2">
+              <label for="2_birch" class="ms-2">
                 Koivu
               </label>
             </div>
             <div class="form-check">
-              <input type="radio" name="puu1" class="puu1" id="vuorijalava1" value="3">
-              <label for="vuorijalava1" class="ms-2">
+              <input type="radio" name="tree" class="tree" id="2_wychelm" value="3">
+              <label for="2_wychelm" class="ms-2">
                 Vuorijalava
               </label>
             </div>
             <div class="form-check">
-              <input type="radio" name="puu1" class="puu1" id="vaahtera1" value="4">
-              <label for="vaahtera1" class="ms-2">
+              <input type="radio" name="tree" class="tree" id="2_maple" value="4">
+              <label for="2_maple" class="ms-2">
                 Vaahtera
               </label>
             </div>
             <div class="form-check">
-              <input type="radio" name="puu1" class="puu1" id="punapuu1" value="1">
-              <label for="punapuu1" class="ms-2">
+              <input type="radio" name="tree" class="tree" id="2_redwood" value="1">
+              <label for="2_redwood" class="ms-2">
                 Jättiläispunapuu
               </label>
             </div>
             <div class="form-check">
-              <input type="radio" name="puu1" class="puu1" id="kuusi1" value="5">
-              <label for="kuusi1" class="ms-2">
+              <input type="radio" name="tree" class="tree" id="2_spruce" value="5">
+              <label for="2_spruce" class="ms-2">
                 Kuusi
               </label>
             </div>
@@ -146,17 +146,17 @@
         </div>
 
         <div class="col-sm-12 col-md-3 col-lg-3">
-          <p class="hided mt-5" id="redwood1">
+          <p class="hided mt-5" id="redwood_info1">
             <img src="img/redwood1.jpg" alt="">
           </p>
         </div>
         <div class="col-sm-12 col-md-3 col-lg-3">
           <h4 class="hided mt-5" id="right2">Oikein!</h4>
           <h4 class="hided mt-5" id="wrong2">Väärin. Oikea vastaus on jättiläispunapuu.</h4>
-          <p class="hided" id="redwood2">"Punapuiden luontainen kasvualue on Tyynenmeren rannikolla Kalifornian
+          <p class="hided" id="redwood_info2">"Punapuiden luontainen kasvualue on Tyynenmeren rannikolla Kalifornian
             pohjoisemmalla puolikkaalla ja Oregonin eteläosissa."
           </p>
-          <address class="hided" id="redwood3">Lähde: <a
+          <address class="hided" id="redwood_info3">Lähde: <a
               href="http://nuortenluonto.fi/maailman-suurimmat-puut-kasvavat-amerikassa/" target="_blank">Nuorten
               Luonto: MAAILMAN SUURIMMAT PUUT KASVAVAT AMERIKASSA</a></address>
         </div>
@@ -167,32 +167,32 @@
           <form>
             <h3>3. Mikä seuraavista luonnonmarjoista on myrkyllinen?</h3>
             <div class="form-check">
-              <input type="radio" name="marja1" class="marja1" id="pikkukarpalo1" value="2">
+              <input type="radio" name="berry" class="berry" id="pikkukarpalo1" value="2">
               <label for="pikkukarpalo1" class="ms-2">
                 Pikkukarpalo
               </label>
             </div>
             <div class="form-check">
-              <input type="radio" name="marja1" class="marja1" id="tyrni1" value="3">
-              <label for="tyrni1" class="ms-2">
+              <input type="radio" name="berry" class="berry" id="3_seabuckthorn" value="3">
+              <label for="3_seabuckthorn" class="ms-2">
                 Tyrni
               </label>
             </div>
             <div class="form-check">
-              <input type="radio" name="marja1" class="marja1" id="mustikka1" value="4">
-              <label for="mustikka1" class="ms-2">
+              <input type="radio" name="berry" class="berry" id="3_blueberry" value="4">
+              <label for="3_blueberry" class="ms-2">
                 Mustikka
               </label>
             </div>
             <div class="form-check">
-              <input type="radio" name="marja1" class="marja1" id="juolukka1" value="5">
-              <label for="juolukka1" class="ms-2">
+              <input type="radio" name="berry" class="berry" id="3_northernbilberry" value="5">
+              <label for="3_northernbilberry" class="ms-2">
                 Juolukka
               </label>
             </div>
             <div class="form-check">
-              <input type="radio" name="marja1" class="marja1" id="punakoiso1" value="1">
-              <label for="punakoiso1" class="ms-2">
+              <input type="radio" name="berry" class="berry" id="3_bittersweet" value="1">
+              <label for="3_bittersweet" class="ms-2">
                 Punakoiso
               </label>
             </div>
@@ -200,21 +200,21 @@
         </div>
 
         <div class="col-sm-12 col-md-3 col-lg-3">
-          <p class="hided mt-5" id="solanum_n1">
+          <p class="hided mt-5" id="solanum_info1">
             <img src="img/solanum_dulcamara1.jpg" alt="">
           </p>
         </div>
         <div class="col-sm-12 col-md-3 col-lg-3">
           <h4 class="hided mt-5" id="right3">Oikein!</h4>
           <h4 class="hided mt-5" id="wrong3">Väärin. Oikea vastaus on punakoiso.</h4>
-          <p class="hided" id="solanum_n2">"Raaka, vihreä marja muuttuu kypsyessään kellanpunaiseksi.
+          <p class="hided" id="solanum_info2">"Raaka, vihreä marja muuttuu kypsyessään kellanpunaiseksi.
             Kypsä marja on punainen ja pitkä. Koko kasvi on myrkyllinen. <br>
             <br> <span class="fw-bolder">Oireet ja toimenpiteet</span> <br>
             Kasvinosien tai marjojen syöminen aiheuttaa yleensä vain lieviä oireita, kuten karvaan maun suuhun,
             mahaoireita ja päänsärkyä. Korkeintaan viiden marjan syöminen ei vaadi toimenpiteitä. Suuremman määrän
             syöneelle annetaan lääkehiiltä."
           </p>
-          <address class="hided" id="solanum_n3">Lähde: <a
+          <address class="hided" id="solanum_info3">Lähde: <a
               href="https://www.luontoon.fi/marjastusjasienestys/myrkyllisetmarjat" target="_blank">Luontoon.fi:
               Myrkylliset marjat: Punakoiso</a></address>
         </div>
@@ -225,26 +225,26 @@
           <form>
             <h3>4. Kuinka monta järveä Suomessa suunnilleen on?</h3>
             <div class="form-check">
-              <input type="radio" name="jarvi1" class="jarvi1" id="tuhat1" value="2">
-              <label for="tuhat1" class="ms-2">
+              <input type="radio" name="lake" class="lake" id="4_thousand" value="2">
+              <label for="4_thousand" class="ms-2">
                 1 000
               </label>
             </div>
             <div class="form-check">
-              <input type="radio" name="jarvi1" class="jarvi1" id="viisi1" value="3">
-              <label for="viisi1" class="ms-2">
+              <input type="radio" name="lake" class="lake" id="4_fivethousand" value="3">
+              <label for="4_fivethousand" class="ms-2">
                 5 000
               </label>
             </div>
             <div class="form-check">
-              <input type="radio" name="jarvi1" class="jarvi1" id="viisi_k1" value="4">
-              <label for="viisi_k1" class="ms-2">
+              <input type="radio" name="lake" class="lake" id="4_fiftythousand" value="4">
+              <label for="4_fiftythousand" class="ms-2">
                 50 000
               </label>
             </div>
             <div class="form-check">
-              <input type="radio" name="jarvi1" class="jarvi1" id="satakuusikasi1" value="1">
-              <label for="satakuusikasi1" class="ms-2">
+              <input type="radio" name="lake" class="lake" id="4_hundsixeight" value="1">
+              <label for="4_hundsixeight" class="ms-2">
                 168 000
               </label>
             </div>
@@ -252,16 +252,16 @@
         </div>
 
         <div class="col-sm-12 col-md-3 col-lg-3">
-          <p class="hided mt-5" id="lakesin1">
+          <p class="hided mt-5" id="lakes_info1">
             <img src="img/lakesinfinland1.jpg" alt="">
           </p>
         </div>
         <div class="col-sm-12 col-md-3 col-lg-3">
           <h4 class="hided mt-5" id="right4">Oikein!</h4>
           <h4 class="hided mt-5" id="wrong4">Väärin. Oikea vastaus on 168 000.</h4>
-          <p class="hided" id="lakesin2">"Suomessa on Suomen ympäristökeskuksen mukaan noin 57 000 järveä,
+          <p class="hided" id="lakes_info2">"Suomessa on Suomen ympäristökeskuksen mukaan noin 57 000 järveä,
             jonka pinta-ala on yli hehtaarin. Vähintään 500 neliömetrin kokoisia järviä on noin 168 000."</p>
-          <address class="hided" id="lakesin3">Lähde: <a
+          <address class="hided" id="lakes_info3">Lähde: <a
               href="https://www.maanmittauslaitos.fi/ajankohtaista/suomi-57-000-168-000-jarven-maa"
               target="_blank">Maanmittauslaitos: Suomi, 57 000 – 168 000 järven maa</a></address>
         </div>
@@ -272,25 +272,25 @@
           <form>
             <h3>5. Mikä seuraavista eläimistä ei nuku talviunta?</h3>
             <div class="form-check">
-              <input type="radio" name="elain1" class="elain1" id="minkki2" value="1">
-              <label for="minkki2" class="ms-2">
+              <input type="radio" name="animal" class="animal" id="5_mink" value="1">
+              <label for="5_mink" class="ms-2">
                 Minkki
               </label>
             </div>
             <div class="form-check">
-              <input type="radio" name="elain1" class="elain1" id="supikoira2" value="2">
-              <label for="supikoira2" class="ms-2">
+              <input type="radio" name="animal" class="animal" id="5_raccoondog" value="2">
+              <label for="5_raccoondog" class="ms-2">
                 Supikoira
               </label>
             </div>
             <div class="form-check">
-              <input type="radio" name="elain1" class="elain1" id="mayra2" value="3">
-              <label for="mayra2" class="ms-2">
+              <input type="radio" name="animal" class="animal" id="5_badger" value="3">
+              <label for="5_badger" class="ms-2">
                 Mäyrä
               </label>
             </div>
             <div class="form-check">
-              <input type="radio" name="elain1" class="elain1" id="ruskeakarhu2" value="4">
+              <input type="radio" name="animal" class="animal" id="ruskeakarhu2" value="4">
               <label for="ruskeakarhu2" class="ms-2">
                 Ruskeakarhu
               </label>
@@ -299,17 +299,17 @@
         </div>
 
         <div class="col-sm-12 col-md-3 col-lg-3">
-          <p class="hided mt-5" id="mink1">
+          <p class="hided mt-5" id="mink_info1">
             <img src="img/mink1.jpg" alt="">
           </p>
         </div>
         <div class="col-sm-12 col-md-3 col-lg-3 mb-5">
           <h4 class="hided mt-5" id="right5">Oikein!</h4>
           <h4 class="hided mt-5" id="wrong5">Väärin. Oikea vastaus on minkki.</h4>
-          <p class="hided" id="mink2">"Minkki viihtyy monenlaisten vesien äärellä. Se liikkuu
+          <p class="hided" id="mink_info2">"Minkki viihtyy monenlaisten vesien äärellä. Se liikkuu
             enimmäkseen aamu- ja iltahämärissä sekä öisin, aktiivisuus määräytyy lämpötilan
             ja saaliin saatavuuden mukaan. Minkki ei nuku talviunta."</p>
-          <address class="hided" id="mink3">Lähde: <a href="https://www.luontoportti.com/suomi/fi/nisakkaat/minkki"
+          <address class="hided" id="mink_info3">Lähde: <a href="https://www.luontoportti.com/suomi/fi/nisakkaat/minkki"
               target="_blank">LuontoPortti: Minkki</a></address>
         </div>
       </div>
@@ -317,75 +317,75 @@
 
       <div class="row mt-5">
         <div class="col-4 ms-md-4 ms-lg-4 text-center">
-          <h5 class="hided" id="tulos5">Sait <span class="lopputulos"></span>/5 oikein. Kaikki oikein!
+          <h5 class="hided" id="result5">Sait <span class="final_result"></span>/5 oikein. Kaikki oikein!
             Onneksi olkoon!</h5>
         </div>
         <div class="col-3 col-lg-2">
-          <p class="hided" id="tulos5_1">
-            <img src="img/lv_kultamitalli1.png" alt="">
+          <p class="hided" id="result5_1">
+            <img src="img/goldmedal.png" alt="">
           </p>
         </div>
         <div class="col-3 col-lg-2">
-          <p class="hided" id="tulos5_2">
-            <img src="img/lv_kukat1.png" alt="">
-          </p>
-        </div>
-
-        <div class="col-4 ms-md-4 ms-lg-4 text-center">
-          <h5 class="hided" id="tulos4">Sait <span class="lopputulos"></span>/5 oikein. Erittäin hyvä suoritus!</h5>
-        </div>
-        <div class="col-3 col-lg-2">
-          <p class="hided" id="tulos4_1">
-            <img src="img/lv_hopeamitalli1.png" alt="">
-          </p>
-        </div>
-        <div class="col-3 col-lg-2">
-          <p class="hided" id="tulos4_2">
-            <img src="img/lv_kukat2.png" alt="">
+          <p class="hided" id="result5_2">
+            <img src="img/flowers1.png" alt="">
           </p>
         </div>
 
         <div class="col-4 ms-md-4 ms-lg-4 text-center">
-          <h5 class="hided" id="tulos3">Sait <span class="lopputulos"></span>/5 oikein. Hyvä suoritus!</h5>
+          <h5 class="hided" id="result4">Sait <span class="final_result"></span>/5 oikein. Erittäin hyvä suoritus!</h5>
         </div>
         <div class="col-3 col-lg-2">
-          <p class="hided" id="tulos3_1">
-            <img src="img/lv_pronssimitalli1.png" alt="">
+          <p class="hided" id="result4_1">
+            <img src="img/silvermedal.png" alt="">
           </p>
         </div>
         <div class="col-3 col-lg-2">
-          <p class="hided" id="tulos3_2">
-            <img src="img/lv_kukat3.png" alt="">
+          <p class="hided" id="result4_2">
+            <img src="img/flowers2.png" alt="">
+          </p>
+        </div>
+
+        <div class="col-4 ms-md-4 ms-lg-4 text-center">
+          <h5 class="hided" id="result3">Sait <span class="final_result"></span>/5 oikein. Hyvä suoritus!</h5>
+        </div>
+        <div class="col-3 col-lg-2">
+          <p class="hided" id="result3_1">
+            <img src="img/bronzemedal.png" alt="">
+          </p>
+        </div>
+        <div class="col-3 col-lg-2">
+          <p class="hided" id="result3_2">
+            <img src="img/flowers3.png" alt="">
           </p>
         </div>
 
         <div class="col-5 ms-md-4 ms-lg-4 text-center">
-          <h5 class="hided" id="tulos2">Sait <span class="lopputulos"></span>/5 oikein. Pienellä petrauksella
+          <h5 class="hided" id="result2">Sait <span class="final_result"></span>/5 oikein. Pienellä petrauksella
             tuloksesi paranee!</h5>
         </div>
         <div class="col-4 col-lg-3">
-          <p class="hided" id="tulos2_1">
-            <img src="img/lv_kukat4.png" alt="">
+          <p class="hided" id="result2_1">
+            <img src="img/flowers4.png" alt="">
           </p>
         </div>
 
         <div class="col-5 ms-md-4 ms-lg-4 text-center">
-          <h5 class="hided" id="tulos1">Sait <span class="lopputulos"></span>/5 oikein. Opiskelemalla pystyt
+          <h5 class="hided" id="result1">Sait <span class="final_result"></span>/5 oikein. Opiskelemalla pystyt
             parantamaan tulostasi.</h5>
         </div>
         <div class="col-4 col-lg-3">
-          <p class="hided" id="tulos1_1">
-            <img src="img/lv_kukat5.png" alt="">
+          <p class="hided" id="result1_1">
+            <img src="img/flowers5.png" alt="">
           </p>
         </div>
 
         <div class="col-5 ms-md-4 ms-lg-4 text-center">
-          <h5 class="hided" id="tulos0">Sait <span class="lopputulos"></span>/5 oikein. Et saanut yhtään oikein.
+          <h5 class="hided" id="result0">Sait <span class="final_result"></span>/5 oikein. Et saanut yhtään oikein.
             Muista keskittyä seuraavalla ympäristöopin tunnilla. </h5>
         </div>
         <div class="col-4 col-lg-3">
-          <p class="hided" id="tulos0_1">
-            <img src="img/lv_kukat6.png" alt="">
+          <p class="hided" id="result0_1">
+            <img src="img/flowers6.png" alt="">
           </p>
         </div>
         <div class="pixabay hided text-secondary ps-md-5">
@@ -404,7 +404,7 @@
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/vikstrom.js"></script>
-  <script src="js/luontovisa.js"></script>
+  <script src="js/naturequiz.js"></script>
   <script src="https://kit.fontawesome.com/aad4a89e11.js" crossorigin="anonymous"></script>
 </body>
 
